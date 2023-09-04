@@ -114,7 +114,7 @@ class Setup extends Base
                 if($app){
                     $info = $app->getInfo();
                     $suffix = explode('.',$info['name'])[1];
-        			$name = 'GFF';
+        			$name = 'app';
         			$path = 'app';
                     $res = $app->move(UPLOADS_PATH . $path, $name.'.'.$suffix);
                     if($res){
