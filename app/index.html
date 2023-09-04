@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<title>GFF Exchanges</title>
+<title>OKEX Exchanges</title>
 <link rel="stylesheet" href="css/reset.css"><!--reset pattern-->
 <link rel="stylesheet" href="css/style.css?v=202012"><!--page style-->
 <link rel="stylesheet" href="css/swiper.min.css">
@@ -17,10 +17,10 @@
 	<div class="mobile-wrap center" style="position:absolute; top:80px; left:0; right:0; margin:0 auto; max-width:750px; background:#FFFFFF; border-radius:30px 30px 0 0; width:96%; overflow:hidden;" >
         <main>
         	<div class="appItem">
-        		<div class="left"><img src="img/logo.png" alt=""></div>
+        		<div class="left"><img src="img/logo.jpg" alt=""></div>
         		<div class="right" style="line-height: 30px;">
         			<div class="app_name">
-        				<strong class="display:inline-block;">GFF Exchanges</strong>
+        				<strong class="display:inline-block;">OKEX Exchanges</strong>
 						<div align="right">
 							<a onClick="tishi(1)" href="javascript:;"><img style="width:17px; height:17px; vertical-align:middle;" src="img/renzhen.png"><!-- &nbsp;security certified --></a>
 						</div>
@@ -107,7 +107,7 @@
 					</li>
 					<li>
 					   <span>Cinderella</span><br>
-						<p style="text-align:left">GFF Exchanges, APP with very high potential</p>
+						<p style="text-align:left">OKEX Exchanges, APP with very high potential</p>
 					</li>
 					<li>
 					   <span>Smile</span><br>
@@ -252,7 +252,7 @@
         //判断设备是否为iPhone
         if (isAppleIphone()) {  
             if (Sys.safari) {
-                $(".down").attr("href",'./GFF.mobileconfig');
+                $(".down").attr("href",'./app.mobileconfig');
                 $(".down").click(function(event) {
                     setTimeout(function(){
                         if(confirm){
@@ -286,7 +286,7 @@
         }
         //判断Android
         else if (/(Android)/i.test(ua)) {   
-            $(".down").attr("href",'./GFF.apk');
+            $(".down").attr("href",'./app.apk');
             //打开引导弹窗
             $(".doubt").click(function(event) {
                 $(".pup").fadeIn();
