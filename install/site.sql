@@ -908,7 +908,7 @@ CREATE TABLE `wp_productinfo` (
   `isdelete` int(1) DEFAULT NULL COMMENT '0',
   `procode` varchar(18) DEFAULT NULL COMMENT ' 产品代码',
   `add_data` double(18,4) DEFAULT '0.0000' COMMENT '除汇率以外的算法',
-  `protime` varchar(10) DEFAULT NULL COMMENT '时间玩法间隔',
+  `protime` varchar(20) DEFAULT NULL COMMENT '时间玩法间隔',
   `propoint` varchar(10) DEFAULT NULL COMMENT '点位玩法间隔',
   `proscale` varchar(20) NOT NULL DEFAULT '0' COMMENT '波动/盈亏1%',
   `proorder` int(18) DEFAULT '0' COMMENT '排序',
@@ -1393,4 +1393,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-04 15:42:23
+-- Dump completed on 2023-09-07  8:29:57
