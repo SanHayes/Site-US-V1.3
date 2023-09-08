@@ -14,6 +14,15 @@ use think\Db;
 // 应用公共文件
 error_reporting( E_ERROR | E_PARSE );
 
+function ip2area($ip){
+    $url='http://whois.pconline.com.cn/ipJson.jsp?ip='.$ip.'&json=true';
+    $str = file_get_contents($url);
+    $str = iconv("GB2312","UTF-8//IGNORE",$str);
+    $str = json_decode($str,true);
+    $address = $str['addr'];
+    return $address;
+}
+
 // 应用公共文件
 function pre($post){
 	echo "<pre>";
